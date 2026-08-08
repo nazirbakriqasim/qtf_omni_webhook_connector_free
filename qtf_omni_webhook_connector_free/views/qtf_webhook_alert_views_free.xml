@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Custom Technical Form View Layout Definition -->
+    <record id="view_qtf_webhook_provider_form" model="ir.ui.view">
+        <field name="name">qtf.webhook.provider.form</field>
+        <field name="model">qtf.webhook.provider</field>
+        <field name="arch" type="xml">
+            <form string="Universal Webhook Alert Gateway">
+                <header>
+                    <button name="qtf_action_test_api_connection" string="Test &amp; Send Live Alert" type="object" class="oe_highlight"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="qtf_name" string="Gateway Connection Name"/>
+                        <h1>
+                            <field name="qtf_name" placeholder="e.g. Mitchell Admin Notification..."/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="Employee Routing Settings">
+                            <field name="qtf_user_id" options="{'no_create': True}"/>
+                            <field name="qtf_recipient_chat_id" placeholder="e.g. 963933135037@c.us"/>
+                        </group>
+                        <group string="API Endpoint Settings">
+                            <field name="qtf_api_url" placeholder="https://provider.com..."/>
+                            <field name="qtf_active_provider"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="HTTP Headers Settings">
+                            <p class="text-muted">Enter valid HTTP Headers in JSON format.</p>
+                            <field name="qtf_headers_json" widget="ace"/>
+                        </page>
+                        <page string="Custom JSON Payload Template">
+                            <p class="text-muted">Always use <b>{{chatId}}</b> and <b>{{message}}</b> as runtime placeholders.</p>
+                            <field name="qtf_payload_template" widget="ace"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Custom Relational Tree List Display Layout -->
+    <record id="view_qtf_webhook_provider_tree" model="ir.ui.view">
+        <field name="name">qtf.webhook.provider.tree</field>
+        <field name="model">qtf.webhook.provider</field>
+        <field name="arch" type="xml">
+            <list string="API Gateways">
+                <field name="qtf_name"/>
+                <field name="qtf_user_id"/>
+                <field name="qtf_recipient_chat_id"/>
+                <field name="qtf_active_provider" widget="boolean_toggle"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Dynamic Action Window Configuration Loader -->
+    <record id="action_qtf_webhook_provider" model="ir.actions.act_window">
+        <field name="name">Universal Messaging Gateways</field>
+        <field name="res_model">qtf.webhook.provider</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+<!-- Master Technical Custom Menu Architecture Entry Node (Kept Outside Root To Bypass Schema Strictness) -->
+<menuitem id="menu_qtf_webhook_provider_root"
+          name="Universal Messenger Connect"
+          parent="base.menu_custom"
+          action="action_qtf_webhook_provider"
+          sequence="45"/>
+</odoo>
