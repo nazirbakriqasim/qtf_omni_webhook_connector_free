@@ -7,7 +7,7 @@
     'summary': 'Bridge Odoo Discuss Messages with Any Webhook API, Telegram, or WhatsApp Gateways',
     'description': 'A completely free, open-source universal webhook engine developed by QTF to forward Odoo 19 internal chat messages to any messaging gateway or API endpoint dynamically.',
     'author': 'Nazir Bakri Qasim',
-    'website': 'https://wa.me',
+    'website': 'https://wa.me/nazirbakriqasim',
     'license': 'LGPL-3',
     'depends': ['base', 'mail'],
     'data': [
