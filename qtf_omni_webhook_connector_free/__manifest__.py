@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'QTF Omni Webhook & Messenger Connector (Free)',
+    'name': 'Omni Webhook & Messenger Connector (Free) By QTF',
     'version': '19.0.1.0.0',
     'sequence': 10,
     'category': 'Discuss/Marketing',

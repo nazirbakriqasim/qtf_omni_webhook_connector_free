@@ -1,61 +1,103 @@
-<section class="oe_container" style="font-family: 'Montserrat', 'Segoe UI', sans-serif;">
+<section class="oe_container">
     <div class="oe_row oe_padded">
-        <div class="text-center">
-            <h2 class="oe_slogan" style="color: #7C7BAD; font-weight: 700; font-size: 36px;">QTF Omni Webhook & Messenger Connector</h2>
-            <h3 class="oe_slogan" style="color: #666; font-size: 18px; margin-top: -10px;">Bridge Odoo Discuss Messages with Any Messaging Webhook or API Endpoint</h3>
-        </div>
-
-        <div class="col-md-12 style_p" style="padding: 20px; background-color: #f8f9fa; border-radius: 8px; border-left: 4px solid #7C7BAD; margin-top: 30px;">
-            <p style="font-size: 16px; line-height: 26px; color: #333;">
-                <strong>QTF Omni Webhook & Messenger Connector</strong> is a powerful, lightweight, and completely free open-source module designed for Odoo 19. It intercepts internal messages from Odoo Discuss channels and forwards them dynamically to any external API or chat gateway (such as <strong>WhatsApp via Green API/Twilio, Telegram Bots, Signal, or Custom Webhooks</strong>).
+        <div class="oe_span12">
+            <h2 class="oe_slogan" style="color:#7C7BAD; font-weight: 700;">QTF Omni Webhook & Messenger Connector</h2>
+            <h3 class="oe_slogan">Bridge Odoo Discuss Messages with Any Messaging Webhook or API Endpoint</h3>
+            <p class="oe_mt32" style="font-size: 16px; line-height: 28px; text-align: justify;">
+                <strong>QTF Omni Webhook & Messenger Connector</strong> is a powerful, lightweight, and completely free open-source module designed for Odoo 19. It intercepts internal messages from Odoo Discuss channels and forwards them dynamically to any external API or chat gateway (such as WhatsApp via Green API/Twilio, Telegram Bots, Signal, or Custom Webhooks).
             </p>
         </div>
     </div>
-
 </section>
 
-<section class="oe_container" style="font-family: 'Montserrat', 'Segoe UI', sans-serif;">
+<!-- KEY FEATURES SECTION -->
+<section class="oe_container oe_dark">
     <div class="oe_row oe_padded">
-        <div class="col-md-12">
-            <h3 class="text-center" style="color: #7C7BAD; font-weight: 600; margin-bottom: 25px;">Key Features</h3>
-        </div>
-        <div class="col-md-6" style="margin-bottom: 15px;">
-            <div style="padding: 15px; background: #fff; border: 1px solid #eee; border-radius: 6px; display: flex; align-items: center;">
-                <span style="font-size: 24px; margin-right: 15px; float: left;">🌐</span>
-                <span style="font-size: 15px; color: #444;"><strong>Universal Compatibility:</strong> Works natively with any HTTP POST API gateway worldwide.</span>
+        <h3 class="oe_slogan" style="color:#2c3e50; font-weight: 600;">Key Features</h3>
+        <div class="oe_span6 oe_mt16">
+            <div class="panel panel-default" style="border: none; box-shadow: 0 4px 6px rgba(0,0,0,0.05); padding: 20px; border-radius: 8px; background: #fff;">
+                <h4 style="color:#7C7BAD; font-weight: 600;"><span style="font-size: 24px; margin-right: 10px;">🌐</span>Universal Compatibility</h4>
+                <p style="margin-top: 10px; color:#555;">Works natively with any HTTP POST API gateway worldwide.</p>
             </div>
         </div>
-        <div class="col-md-6" style="margin-bottom: 15px;">
-            <div style="padding: 15px; background: #fff; border: 1px solid #eee; border-radius: 6px; display: flex; align-items: center;">
-                <span style="font-size: 24px; margin-right: 15px; float: left;">🐋</span>
-                <span style="font-size: 15px; color: #444;"><strong>Docker & Localhost Ready:</strong> Bypasses internal Odoo sandboxing limits securely via native server requests.</span>
+        <div class="oe_span6 oe_mt16">
+            <div class="panel panel-default" style="border: none; box-shadow: 0 4px 6px rgba(0,0,0,0.05); padding: 20px; border-radius: 8px; background: #fff;">
+                <h4 style="color:#7C7BAD; font-weight: 600;"><span style="font-size: 24px; margin-right: 10px;">🐋</span>Docker & Localhost Ready</h4>
+                <p style="margin-top: 10px; color:#555;">Bypasses internal Odoo sandboxing limits securely via native server requests.</p>
             </div>
         </div>
-        <div class="col-md-6" style="margin-bottom: 15px;">
-            <div style="padding: 15px; background: #fff; border: 1px solid #eee; border-radius: 6px; display: flex; align-items: center;">
-                <span style="font-size: 24px; margin-right: 15px; float: left;">🛠️</span>
-                <span style="font-size: 15px; color: #444;"><strong>Custom Headers & Payloads:</strong> Fully customizable JSON template fields using the <code>{{message}}</code> placeholder.</span>
+        <div class="oe_span6 oe_mt16">
+            <div class="panel panel-default" style="border: none; box-shadow: 0 4px 6px rgba(0,0,0,0.05); padding: 20px; border-radius: 8px; background: #fff;">
+                <h4 style="color:#7C7BAD; font-weight: 600;"><span style="font-size: 24px; margin-right: 10px;">🛠️</span>Custom Headers & Payloads</h4>
+                <p style="margin-top: 10px; color:#555;">Fully customizable JSON template fields using the {{message}} placeholder.</p>
             </div>
         </div>
-        <div class="col-md-6" style="margin-bottom: 15px;">
-            <div style="padding: 15px; background: #fff; border: 1px solid #eee; border-radius: 6px; display: flex; align-items: center;">
-                <span style="font-size: 24px; margin-right: 15px; float: left;">✨</span>
-                <span style="font-size: 15px; color: #444;"><strong>Clean Text Stripping:</strong> Automatically strips complex HTML/P/BR tags from chat strings before dispatching.</span>
+        <div class="oe_span6 oe_mt16">
+            <div class="panel panel-default" style="border: none; box-shadow: 0 4px 6px rgba(0,0,0,0.05); padding: 20px; border-radius: 8px; background: #fff;">
+                <h4 style="color:#7C7BAD; font-weight: 600;"><span style="font-size: 24px; margin-right: 10px;">✨</span>Clean Text Stripping</h4>
+                <p style="margin-top: 10px; color:#555;">Automatically strips complex HTML/P/BR tags from chat strings before dispatching.</p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="oe_container" style="background-color: #fcfafe; border-top: 1px solid #eee; margin-top: 40px; padding: 30px 0; font-family: 'Montserrat', 'Segoe UI', sans-serif;">
-    <div class="oe_row text-center">
-        <div class="col-md-12 text-center">
-            <h4 style="color: #7C7BAD; font-weight: 600;">Developed & Maintained by</h4>
-            <h3 style="font-weight: 700; color: #222; margin: 10px 0;">Nazir Bakri Qasim</h3>
-            <div style="margin-top: 15px;">
-                <a href="https://wa.me" target="_blank" class="btn btn-success" style="background-color: #25D366; border: none; padding: 12px 30px; font-size: 16px; font-weight: 600; border-radius: 4px; color: white; text-decoration: none; display: inline-block;">
-                    💬 Contact Author via WhatsApp
-                </a>
-            </div>
+<!-- WHATSAPP SCREENSHOTS (2 Images) -->
+<section class="oe_container">
+    <div class="oe_row oe_padded">
+        <h3 class="oe_slogan" style="color:#25D366; font-weight: 600;">WhatsApp Integration Screenshots</h3>
+        <div class="oe_span6 oe_mt16 text-center">
+            <h4 style="color: #555; font-size: 14px; margin-bottom: 8px;">WhatsApp Configuration Layout</h4>
+            <img class="img img-responsive img-thumbnail" src="whatsapp_screenshot_1.png" style="width: 100%; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);" alt="WhatsApp Config">
+        </div>
+        <div class="oe_span6 oe_mt16 text-center">
+            <h4 style="color: #555; font-size: 14px; margin-bottom: 8px;">Message Delivery to WhatsApp Client</h4>
+            <img class="img img-responsive img-thumbnail" src="whatsapp_screenshot_2.png" style="width: 100%; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);" alt="WhatsApp Message">
+        </div>
+    </div>
+</section>
+
+<!-- TELEGRAM SCREENSHOTS (3 Images) -->
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_padded">
+        <h3 class="oe_slogan" style="color:#0088cc; font-weight: 600;">Telegram Integration Screenshots</h3>
+        <div class="oe_span4 oe_mt16 text-center">
+            <h4 style="color: #555; font-size: 14px; margin-bottom: 8px;">Telegram Configuration Layout</h4>
+            <img class="img img-responsive img-thumbnail" src="telegram_screenshot_1.png" style="width: 100%; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);" alt="Telegram Setup">
+        </div>
+        <div class="oe_span4 oe_mt16 text-center">
+            <h4 style="color: #555; font-size: 14px; margin-bottom: 8px;">Test Message</h4>
+            <img class="img img-responsive img-thumbnail" src="telegram_screenshot_2.png" style="width: 100%; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);" alt="Telegram Rule">
+        </div>
+        <div class="oe_span4 oe_mt16 text-center">
+            <h4 style="color: #555; font-size: 14px; margin-bottom: 8px;">Message Delivery to Telegram Client</h4>
+            <img class="img img-responsive img-thumbnail" src="telegram_screenshot_3.png" style="width: 100%; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);" alt="Telegram Output">
+        </div>
+    </div>
+</section>
+
+<!-- RATING & REVIEW CALL TO ACTION -->
+<section class="oe_container" style="background: #f8f9fa; border-radius: 8px; margin-top: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+    <div class="oe_row oe_padded text-center">
+        <div class="oe_span12">
+            <span style="font-size: 40px; display: block; margin-bottom: 10px;">⭐ ⭐ ⭐ ⭐ ⭐</span>
+            <h3 style="font-weight: 700; color: #2c3e50; margin-top: 0;">Supporting Free & Open-Source Tools</h3>
+            <p style="font-size: 15px; color: #666; max-width: 600px; margin: 10px auto 20px; line-height: 24px;">
+                Your support keeps this project alive and open-source! If this module successfully saved your development time or helped your business, please leave us a <strong>5-star rating</strong> on the Odoo Apps Store, or simply click below to drop us a <strong>kind message of appreciation</strong>. Your feedback means the world to us!
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<!-- AUTHOR FOOTER SECTION -->
+<section class="oe_container" style="border-top: 2px solid #7C7BAD; margin-top: 40px;">
+    <div class="oe_row oe_padded text-center">
+        <div class="oe_span12">
+            <h4 style="font-weight: 600; color: #2c3e50; margin-bottom: 5px;">Developed & Maintained by</h4>
+            <h3 style="font-weight: 700; color: #7C7BAD; margin-top: 0; margin-bottom: 20px;">Nazir Bakri Qasim</h3>
+            <a href="https://wa.me/nazirbakriqasim" target="_blank" class="btn btn-success btn-lg" style="background-color: #25D366; border-color: #25D366; font-weight: 600; padding: 12px 30px; border-radius: 50px; box-shadow: 0 4px 10px rgba(37,211,102,0.3);">
+                <span style="margin-right: 8px;">💬</span> Contact Author via WhatsApp
+            </a>
         </div>
     </div>
 </section>
