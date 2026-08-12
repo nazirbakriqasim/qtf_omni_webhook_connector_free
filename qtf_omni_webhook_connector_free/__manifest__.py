@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Omni Webhook & Messenger Connector (Free) By QTF',
+    'name': 'Omni: Instant WhatsApp & Telegram Alerts for Discuss (Free) By QTF',
     'version': '19.0.1.0.0',
     'sequence': 10,
     'category': 'Discuss/Marketing',
-    'summary': 'Bridge Odoo Discuss Messages with Any Webhook API, Telegram, or WhatsApp Gateways',
+    'summary': 'Link Odoo Discuss with WhatsApp, Telegram, Signal, and Custom Webhooks instantly.',
     'description': 'A completely free, open-source universal webhook engine developed by QTF to forward Odoo 19 internal chat messages to any messaging gateway or API endpoint dynamically.',
     'author': 'Nazir Bakri Qasim',
     'website': 'https://wa.me/nazirbakriqasim',
